@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <div title="mydiv" class="div1" id="juani">
+            <button class="btn">Click</button>
+        </div>
+
+
+
+    <script>
+        // captura de elementos
+        /*document.getElementById('josefa') //captuera elementos por id //captura todo el documento
+        document.getElementsByClassName('div1') //captuera elementos por la clase
+        document.getElementsByTagName('button') //captuera elementos por etiqueta
+        document.querySelector('.chelo') //captura el primer elemento que coincida con la clase
+        document.querySelectorAll('.chelo') //captura todos los elementos que coincidan con la clase*/
+
+        
+        const elementX = document.querySelector('[title="mydiv"]');
+
+        //obtener atributo - getAttribute
+        const capturedTitle = elementX.getAttribute('disaled'); 
+        const capturedProp = elementX.title;  
+    
+        console.log(capturedTitle);
+
+        //modificar atributo - setAttribute
+        elementX.setAttribute('title', 'alcahueta');
+        elementX.title = "alcahueta2";
+
+    </script>
+    
+</body>
+</html>
